@@ -1,33 +1,33 @@
 #include<stdio.h>
 int main()
 {
-	int x, y, m = 2, n = 2;
+	int x, y, m = 2, n = 2, max = 2, max2 = 2;
 	scanf_s("%d", &x);
 	scanf_s("%d", &y);
 
-	if (x < y)
+	if (x <= y)
 	{
 		while (m <= y)
 		{
-			if (x % m == 0 && y % m == 0)
+			if (x % m == 0 && y % m == 0 && m > max)
 			{
-				m = 1 * m;  	
+				max = m;
 			}
-			m++;	
+			m++;
 		}
-		printf("%d ", m - 1);
+		printf("%d ", max);
 	}
 	else
 	{
 		while (n <= x)
 		{
-			if (y % n == 0 && x % n == 0)
+			if (y % n == 0 && x % n == 0 && n > max2)
 			{
-				n = 1 * n;
+				max2 = n;
 			}
 			n++;
 		}
-		printf("%d ", n - 1);
+		printf("%d ", max2);
 	}
 	return 0;
 }
