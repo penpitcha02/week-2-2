@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-	int x, y, m = 2, n = 2, max = 2, max2 = 2;
+	int x, y, m = 1, n = 1, max = 1, max2 = 1;
 	scanf_s("%d", &x);
 	scanf_s("%d", &y);
 
